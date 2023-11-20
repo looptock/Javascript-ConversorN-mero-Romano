@@ -22,7 +22,7 @@ class ConversorNumerico {
     }
   
     static #validarRomano(romano) {
-      if (!/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(romano)) {
+      if (!/^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(romano)) {
         throw new Error('A string romana fornecida é inválida.');
       }
     }
@@ -56,8 +56,8 @@ class ConversorNumerico {
     }
   }
 
-    // const p1 = 4999
-    // console.log(ConversorNumerico.converterParaRomano(p1));
-  // Exportando a classe para ser usada em outros módulos
-  module.exports = { ConversorNumerico };
+    // const p1 = "MMMMCMXCIX"
+    // console.log(ConversorNumerico.converterParaArabico(p1));
+    // Exportando a classe para ser usada em outros módulos
+module.exports = { ConversorNumerico };
   

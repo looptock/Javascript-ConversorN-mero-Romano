@@ -1,4 +1,4 @@
-const { ConversorNumerico } = require('./ConversorNumerico');
+const { ConversorNumerico } = require('./conversorNumerico');
 
 test('converterParaRomano converte corretamente', () => {
   expect(ConversorNumerico.converterParaRomano(1)).toBe('I');
@@ -13,7 +13,7 @@ test('lança um erro para números fora da faixa em converterParaRomano', () => 
   }).toThrow('O número deve ser um inteiro entre 1 e 4999.');
 
   expect(() => {
-    ConversorNumerico.converterParaRomano(4000);
+    ConversorNumerico.converterParaRomano(5000);
   }).toThrow('O número deve ser um inteiro entre 1 e 4999.');
 
   expect(() => {

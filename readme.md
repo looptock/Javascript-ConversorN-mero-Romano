@@ -16,6 +16,8 @@ Um projeto que utiliza JavaScript e o conceito de classes para realizar a conver
 
 - [ ] **Interface gráfica**: Interface para que possa ser feito uma interação gráfica do usuário com o conversor.
 
+- [ ] **Números acima de 4999**: Interface para que possa ser feito uma interação gráfica do usuário com o conversor.
+
 ### Conceitos abordados
 
 - Classes e métodos em javascript.
